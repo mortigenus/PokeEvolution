@@ -1,0 +1,34 @@
+excluded:
+  - Carthage
+  - Pods
+  - Scripts
+
+identifier_name:
+  min_length:
+    warning: 0
+    error: 0
+
+large_tuple: # questionable, we'll see how it goes
+  warning: 4
+  error: 5
+
+# Test performance on a bigger project, move to CI if needed
+opt_in_rules:
+  - closure_end_indentation 
+  - closure_spacing
+  - contains_over_first_not_nil
+  - empty_count
+  - explicit_init
+  - fatal_error_message
+  - first_where
+  - literal_expression_end_indentation
+  - vertical_parameter_alignment_on_call
+
+disabled_rules:
+  - line_length # I like it but it's annoying :(
+  - force_cast # Find a way to hide errors on table view cell casts other than with comments
+  - todo
+  - notification_center_detachment
+  - trailing_comma
+  - unneeded_break_in_switch
+  - unused_optional_binding
